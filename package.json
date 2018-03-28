@@ -1,0 +1,37 @@
+{
+  "name": "server_react_example",
+  "version": "1.0.0",
+  "description": "Server to the project react_example",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "./node_modules/.bin/nodemon"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gilsonmandalogo/node_example.git"
+  },
+  "keywords": [
+    "node",
+    "video",
+    "stream",
+    "js",
+    "mongodb"
+  ],
+  "author": "Gilson Marquato Júnior",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/gilsonmandalogo/node_example/issues"
+  },
+  "homepage": "https://github.com/gilsonmandalogo/node_example#readme",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "connect-multiparty": "^2.1.0",
+    "express": "^4.16.3",
+    "express-validator": "^5.0.3",
+    "mongodb": "^3.0.4"
+  },
+  "devDependencies": {
+    "nodemon": "^1.17.2"
+  }
+}
