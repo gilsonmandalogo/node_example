@@ -1,4 +1,4 @@
-class videoDao {
+class VideoDao {
   constructor() {
     this._dbConnection = require('../config/dbConnection');
     this._fs = require('fs');
@@ -48,4 +48,4 @@ class videoDao {
   }
 }
 
-module.exports = () => new videoDao();
+module.exports = () => new VideoDao();

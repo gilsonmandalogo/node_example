@@ -1,4 +1,4 @@
-class video {
+class Video {
   constructor(app) {
     this._app = app;
     this._videoDao = require('../models/videoDao')();
@@ -31,7 +31,7 @@ class video {
       let page = 0;
 
       if (req.query.page) {
-        page = req.query.page;
+        page = parseInt(req.query.page);
       };
 
       this._videoDao.loadVideos(page, (err, documents, count) => {
@@ -46,4 +46,4 @@ class video {
   }
 }
 
-module.exports = app => new video(app);
+module.exports = app => new Video(app);

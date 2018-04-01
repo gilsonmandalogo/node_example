@@ -1,12 +1,10 @@
 const app = require('./config/server');
 
-const port = 80;
-
-app.listen(port, () => {
-	console.log('Http server listen on port ' + port);
+app.listen(app.serverConfig.httpPort, () => {
+	console.log('Http server listen on port ' + app.serverConfig.httpPort);
 });
 
-require('./stream_server');
+require('./stream_server')(app);
 require('./routes/video')(app);
 
 module.exports = app;
